@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Pick a joke</h3>
+    <form action="/" method="GET">
+        <select class="jokes" name="jokeType" id="jokeType">
+            <option name="any" value="any">Any</option>
+            <option name="misc" value="misc">Misc</option>
+            <option name="programming" value="programming">Programming</option>
+            <option name="dark" value="dark">Dark</option>
+            <option name="pun" value="pun">Pun</option>
+            <option name="spooky" value="spooky">Spooky</option>
+            <option name="christmas" value="christmas">Christmas</option>
+        </select>
+        <button type="submit">Ok</button>
+    </form>
+<!-- Any, Misc, Programming, Dark, Pun, Spooky, Christmas -->
+    <p>Category: <%= locals.category %></p>
+    <p>Setup: <%= locals.setup %></p>
+    <p>Delivery: <%= locals.delivery %></p>
+</body>
+</html>
